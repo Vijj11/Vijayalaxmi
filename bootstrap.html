@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Tasks</title>
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .card {
+      overflow: hidden;
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card-header-hover {
+      height: 150px;
+      background: linear-gradient(to bottom right, #005b96, #003f6b);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background 0.3s ease-in-out;
+      color: white;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .card:hover .card-header-hover {
+      background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-rsY5yfguXIiY6_ODrZehx4BFNJyXdsWPHQ&s') center/cover no-repeat;
+      color: white;
+    }
+
+    .card-body p {
+      margin-bottom: 0.5rem;
+    }
+
+    .card-link {
+      color: #f9a825;
+      text-decoration: none;
+      margin-right: 10px;
+    }
+
+    .card-link:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="container my-5">
+    <h2 class="text-primary">Task 1: Header Section (Builderz style)</h2>
+    <div class="bg-warning text-dark p-4">
+      <div class="d-flex justify-content-between align-items-center">
+        <h1>Builderz</h1>
+        <div>
+          <span class="me-4">Opening Hour: Mon - Fri 8:00 - 9:00</span>
+          <span class="me-4">Call Us: +012 345 6789</span>
+          <span>Email Us: info@example.com</span>
+        </div>
+      </div>
+      <nav class="nav nav-pills bg-dark mt-3 p-2">
+        <a class="nav-link text-white" href="#">Home</a>
+        <a class="nav-link text-white" href="#">About</a>
+        <a class="nav-link text-white" href="#">Service</a>
+        <a class="nav-link text-white" href="#">Team</a>
+        <a class="nav-link text-white" href="#">Project</a>
+        <a class="nav-link text-white" href="#">Contact</a>
+        <a class="btn btn-light ms-auto" href="#">Get A Quote</a>
+      </nav>
+      <div class="text-center py-5">
+        <h2>We Are Professional</h2>
+        <h1>For Your Dream Project</h1>
+        <button class="btn btn-dark">Get A Quote</button>
+      </div>
+    </div>
+
+    <h2 class="text-primary mt-5">Task 2: Pricing Table</h2>
+    <div class="row text-center">
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-body">
+            <h5>Free</h5>
+            <h6>$0 / mo</h6>
+            <ul class="list-unstyled">
+              <li>10 users</li>
+              <li>2 GB of storage</li>
+              <li>Email support</li>
+              <li>Help center access</li>
+            </ul>
+            <a href="#" class="btn btn-outline-primary">Sign up for free</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-body">
+            <h5>Pro</h5>
+            <h6>$15 / mo</h6>
+            <ul class="list-unstyled">
+              <li>20 users</li>
+              <li>10 GB of storage</li>
+              <li>Priority email support</li>
+              <li>Help center access</li>
+            </ul>
+            <a href="#" class="btn btn-primary">Get started</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-body">
+            <h5>Enterprise</h5>
+            <h6>$29 / mo</h6>
+            <ul class="list-unstyled">
+              <li>30 users</li>
+              <li>15 GB of storage</li>
+              <li>Phone and email support</li>
+              <li>Help center access</li>
+            </ul>
+            <a href="#" class="btn btn-primary">Contact us</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container my-5">
+        <h3 class="mb-4" style="color: #3f51b5;">Task 3</h3>
+        <div class="row row-cols-1 row-cols-md-4 g-4">
+          <!-- Repeat this column for each card -->
+          <div class="col">
+            <div class="card">
+              <div class="card-header-hover">
+                <h5 class="mb-0">MATERIAL CARDS</h5>
+              </div>
+              <div class="card-body">
+                <p>Cards for display in portfolio style material design by Google.</p>
+                <a href="#" class="card-link">LINK</a>
+                <a href="#" class="card-link">LINK</a>
+              </div>
+            </div>
+          </div>
+    
+          <!-- Duplicate as needed -->
+          <div class="col">
+            <div class="card">
+              <div class="card-header-hover">
+                <h5 class="mb-0">MATERIAL CARDS</h5>
+              </div>
+              <div class="card-body">
+                <p>Cards for display in portfolio style material design by Google.</p>
+                <a href="#" class="card-link">LINK</a>
+                <a href="#" class="card-link">LINK</a>
+              </div>
+            </div>
+          </div>
+    
+          <div class="col">
+            <div class="card">
+              <div class="card-header-hover">
+                <h5 class="mb-0">MATERIAL CARDS</h5>
+              </div>
+              <div class="card-body">
+                <p>Cards for display in portfolio style material design by Google.</p>
+                <a href="#" class="card-link">LINK</a>
+                <a href="#" class="card-link">LINK</a>
+              </div>
+            </div>
+          </div>
+    
+          <div class="col">
+            <div class="card">
+              <div class="card-header-hover">
+                <h5 class="mb-0">MATERIAL CARDS</h5>
+              </div>
+              <div class="card-body">
+                <p>Cards for display in portfolio style material design by Google.</p>
+                <a href="#" class="card-link">LINK</a>
+                <a href="#" class="card-link">LINK</a>
+              </div>
+            </div>
+          </div>
+    
+        </div>
+      </div>
+
+    <h2 class="text-primary mt-5">Task 4: Form with Validation</h2>
+    <form>
+      <div class="row g-3">
+        <div class="col-md-6">
+          <label class="form-label">First Name</label>
+          <input type="text" class="form-control is-invalid" placeholder="First Name">
+          <div class="invalid-feedback">Please supply your first name</div>
+        </div>
+        <div class="col-md-6">
+          <label class="form-label">Last Name</label>
+          <input type="text" class="form-control is-invalid" placeholder="Last Name">
+          <div class="invalid-feedback">Please supply your last name</div>
+        </div>
+        <div class="col-md-6">
+          <label class="form-label">E-Mail</label>
+          <input type="email" class="form-control is-invalid" placeholder="E-Mail Address">
+          <div class="invalid-feedback">Please supply your email address</div>
+        </div>
+        <div class="col-md-6">
+          <label class="form-label">Phone #</label>
+          <input type="tel" class="form-control" placeholder="(845)555-1212">
+        </div>
+        <div class="col-12">
+          <label class="form-label">Address</label>
+          <input type="text" class="form-control" placeholder="Address">
+        </div>
+        <div class="col-md-6">
+          <label class="form-label">City</label>
+          <input type="text" class="form-control" placeholder="City">
+        </div>
+        <div class="col-md-6">
+          <label class="form-label">State</label>
+          <select class="form-select">
+            <option selected>Please select your state</option>
+            <option>State 1</option>
+            <option>State 2</option>
+          </select>
+        </div>
+        <div class="col-12">
+          <label class="form-label">Do you have hosting?</label>
+          <div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="hosting" id="yes" value="yes">
+              <label class="form-check-label" for="yes">Yes</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="hosting" id="no" value="no">
+              <label class="form-check-label" for="no">No</label>
+            </div>
+          </div>
+        </div>
+        <div class="col-12">
+          <label class="form-label">Project Description</label>
+          <textarea class="form-control"></textarea>
+        </div>
+        <div class="col-12">
+          <button type="submit" class="btn btn-warning">Send</button>
+        </div>
+      </div>
+    </form>
+
+    <h2 class="text-primary mt-5">Task 5: Simple Validation Form</h2>
+    <form>
+      <div class="mb-3">
+        <label class="form-label">Name</label>
+        <input type="text" class="form-control is-invalid">
+        <div class="invalid-feedback">Name is required</div>
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Email</label>
+        <input type="email" class="form-control is-invalid">
+        <div class="invalid-feedback">Email is required</div>
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Password</label>
+        <input type="password" class="form-control is-invalid">
+        <div class="invalid-feedback">Password is required</div>
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Hobbies</label>
+        <select class="form-select">
+          <option>Select a hobby</option>
+          <option>Reading</option>
+          <option>Traveling</option>
+        </select>
+      </div>
+      <button type="submit" class="btn btn-danger">Submit</button>
+    </form>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
