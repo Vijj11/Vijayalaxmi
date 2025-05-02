@@ -1,0 +1,455 @@
+CSS task1:
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <style>
+        #table1 {
+            border-collapse: separate;
+            background-color: lightblue;
+            width: 75%;
+            border-radius: 20px;
+        }
+
+        .th1, .td1 {
+            border: 1px solid black;
+            padding: 5px;
+            border-radius: 50px;
+        }
+
+        .table2 {
+            border-collapse: separate;
+            margin: 20px;
+        }
+        .td2 {
+            width: 100px;
+            height: 60px;
+            border: 2px solid green;
+        }
+
+        .curve1{
+            border-radius: 3px;
+        }
+
+        .curve2{
+            border-radius: 5px;
+        }
+
+        .curve3{
+            border-radius: 7px;
+        }
+
+        .curve4{
+            border-radius: 10px;
+        }
+
+        .curve5{
+            border-radius: 15px;
+        }
+
+        .top-right-bottom-left-round{
+            border-radius: 0 15px 0 22px;
+        }
+        
+        .oval{ 
+            border-radius: 50%; 
+        }
+        .vnav {
+            padding: 10px;
+            width:25%;
+            border:1px solid black;
+            background-color: lightblue;
+            a{
+                color: darkblue;
+                text-decoration: none;
+            }
+            #home{
+                background-color: orange;
+                color: white;
+            }
+        }
+        
+        .hnav{
+            padding: 10px;
+            width:fit-content;
+            border:1px solid black;
+            background-color: darkgrey;
+            overflow: hidden;
+            a{
+                float:left;
+                display: block;
+                color: darkblue;
+                padding: 12px 20px;
+                text-align: center;
+                text-decoration: none;
+                border-left: blue solid 1px;
+            }
+            #home{
+                background-color: grey;
+                color:white;
+            }
+        }
+        
+        .companyTable{
+            padding: 6px;;
+            width: 100%;
+            text-align: left;
+            border-collapse: collapse;
+            font-family: Arial, Helvetica, sans-serif;
+            th{
+                background-color: rgb(42, 170, 42);
+                color: white;
+                padding: 8px;
+            }
+            td{
+                padding:8px
+            }
+            tr{
+                background-color: white;
+            }
+            #odd{
+                background-color: darkgray;
+            }
+        }
+        
+          
+          .container {
+            width: 100vw;
+            height: 50vh;
+            border: 2px solid black;
+            box-sizing: border-box;
+            display: flex;
+          }
+          
+          .sidenav {
+            width: 60px;
+            
+            background-color: #f1f1f1;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding-top: 20px;
+          }
+          
+          .sidenav a {
+            padding: 15px 10px;
+            text-decoration: none;
+            font-size: 20px;
+            color: white;
+            width: 100%;
+            transition: 0.3s;
+            white-space: nowrap;
+          }
+          
+          .sidenav a.green { background-color: #04AA6D; }
+          .sidenav a.blue { background-color: #2196F3; }
+          .sidenav a.red { background-color: #f44336; }
+          .sidenav a.gray { background-color: #555; }
+          
+          .sidenav a:hover {
+            width: 200px;
+          }
+          
+          .main {
+            flex-grow: 1;
+            padding: 20px;
+          }
+          
+          
+          .login-container {
+            width: 350px;
+            height: 400px;
+            margin: 50px auto;
+            border: 1px solid #ddd;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 8px;
+          }
+          
+          .avatar {
+            text-align: center;
+            margin-bottom: 20px;
+          }
+          
+          .avatar img {
+            width: 100px;
+            border-radius: 50%;
+          }
+          
+          input[type=text], input[type=password] {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0 16px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+          }
+          
+          .login-btn {
+            background-color: #04AA6D;
+            color: white;
+            padding: 12px;
+            width: 100%;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+          }
+          
+          .login-btn:hover {
+            background-color: #038c5a;
+          }
+          
+          .remember {
+            display: flex;
+            align-items: center;
+            font-size: 14px;
+            margin-top: 10px;
+          }
+          
+          .footer-buttons {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px;
+          }
+          
+          .cancelbtn {
+            background-color: #f44336;
+            color: white;
+            padding: 10px 16px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+          }
+          
+          .cancelbtn:hover {
+            background-color: #da190b;
+          }
+          
+          .psw a {
+            color: #555;
+            font-size: 14px;
+            text-decoration: none;
+          }
+          
+          .psw a:hover {
+            text-decoration: underline;
+          }
+         
+          
+          .container {
+            margin: 0 auto;
+            width: 600px;
+            padding: 20px;
+            background-color: #d2d24a;
+          }
+          
+          .navbar {
+            list-style-type: none;
+            padding: 0;
+            margin: 0 0 20px 0;
+            float: left;
+            width: 150px;
+          }
+          
+          .navbar li {
+            margin-bottom: 10px;
+          }
+          
+          .navbar a {
+            display: block;
+            padding: 8px;
+            background-color: white;
+            color: #330066;
+            text-decoration: none;
+            font-weight: bold;
+            border-left: 10px solid black;
+          }
+          
+          .main-content {
+            margin-left: 180px;
+          }
+          
+          h1 {
+            color: #990066;
+          }
+          
+          .footer {
+            font-style: italic;
+            color: #666;
+          }
+    </style>
+
+</head>
+<body>
+    <table id="table1" align="center">
+        <tr>
+            <th class="th1">Firstname</th>
+            <th class="th1">Lastname</th>
+            <th class="th1">Age</th>
+        </tr>
+        <tr>
+            <td class="td1">Jill</td>
+            <td class="td1">Smith</td>
+            <td class="td1">50</td>
+        </tr>
+        <tr>
+            <td class="td1">Eve</td>
+            <td class="td1">Jackson</td>
+            <td class="td1">94</td>
+        </tr>
+        <tr>
+            <td class="td1">John</td>
+            <td class="td1">Doe</td>
+            <td class="td1">80</td>
+        </tr>
+    </table>
+    <br><br>
+    <table id="table2" cellspacing="25" align="center">
+        <tr>
+          <td class="curve3 td2"></td>
+          <td class="curve4 td2"></td>
+          <td class="curve5 td2"></td>
+        </tr>
+        <tr>
+          <td class="curve4 td2"></td>
+          <td class="curve1 td2"></td>
+          <td class="curve5 td2"></td>
+        </tr>
+        <tr>
+          <td class="oval td2"></td>
+          <td class="curve2 td2"></td>
+          <td class="top-right-bottom-left-round td2"></td>
+        </tr>
+      </table>
+
+      <header><h3>Vertical Navigation Bar</h3></header>
+    <div class="vnav">
+        <div id="home"><a  href="#" id="home">Home</a><br></div>
+        <a href="#">Java</a><br>
+        <a href="#">CSS</a><br>
+        <a href="#">HTML</a><br>
+        <a href="#">Bootstrap</a><br>
+    </div>
+    <br>
+    <div class="hnav">
+        <a  href="#" id="home">Home</a>
+        <a href="#">Java</a>
+        <a href="#">CSS</a>
+        <a href="#">HTML</a>
+        <a href="#">    </a>
+    </div>
+    <br>
+    <table class="companyTable">
+        <thead>
+            <tr>
+                <th>Company</th>
+                <th>Contact</th>
+                <th>Country</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr id="odd">
+                <td>Alfreds Futterkiste</td>
+                <td>Maria Anders</td>
+                <td>Germany</td>
+            </tr>
+            <tr>
+                <td>Berglunds snabbkop</td>
+                <td>Christina Berglund</td>
+                <td>Sweden</td>
+            </tr>
+            <tr id="odd">
+                <td>Centro comercial Moctezuma</td>
+                <td>Francisco Chang</td>
+                <td>Mexico</td>
+            </tr>
+            <tr>
+                <td>Ernst Handel</td>
+                <td>Roland Mendel</td>
+                <td>Austria</td>
+            </tr>
+            <tr id="odd">
+                <td>Island Trading</td>
+                <td>Helen Bennett</td>
+                <td>UK</td>
+            </tr>
+            <tr>
+                <td>koniglich Essen</td>
+                <td>Philip Cramer</td>
+                <td>Germany</td>
+            </tr>
+            <tr id="odd">
+                <td>Laughing Bacchus Winecellars</td>
+                <td>Yoshi Tannamuri</td>
+                <td>Canada</td>
+            </tr>
+            <tr>
+                <td>Magazzini Alimentari Riuniti</td>
+                <td>Giovanni Rovelli</td>
+                <td>Italy</td>
+            </tr>
+    </table>
+    <br><br>
+    <div class="container">
+        <div class="sidenav">
+          <a href="#" class="green">Green</a>
+          <a href="#" class="blue">Blue</a>
+          <a href="#" class="red">Red</a>
+          <a href="#" class="gray">Gray</a>
+        </div>
+      
+        <div class="main">
+          <h2>Hoverable Sidenav Buttons</h2>
+          <p>Hover over the buttons in the left side navigation to open them.</p>
+        </div>
+      </div> 
+        <br><br>
+      <div class="login-container">
+        <form class="login-form">
+          <div class="avatar">
+            <img src="image5.jpeg" alt="Avatar">
+          </div>
+      
+          <label for="username"><b>Username</b></label>
+          <input type="text" placeholder="Enter Username" name="username" required>
+      
+          <label for="password"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="password" required>
+      
+          <button type="submit" class="login-btn">Login</button>
+      
+          <label class="remember">
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+          </label>
+      
+          <div class="footer-buttons">
+            <button type="button" class="cancelbtn">Cancel</button>
+            <span class="psw"><a href="#">Forgot password?</a></span>
+          </div>
+        </form>
+      </div>  
+        <br><br>
+        <div class="container">
+            <ul class="navbar">
+              <li><a href="#">Home page</a></li>
+              <li><a href="#">Musings</a></li>
+              <li><a href="#">My town</a></li>
+              <li><a href="#">Links</a></li>
+            </ul>
+        
+            <div class="main-content">
+              <h1>My first styled page</h1>
+              <p>Welcome to my styled page!</p>
+              <p>It lacks images, but at least it has style. And it has links, even if they don’t go anywhere...</p>
+              <p>There should be more here, but I don’t know what yet.</p>
+              <hr>
+              <p class="footer"><em>Made 5 April 2004<br>by myself.</em></p>
+            </div>
+          </div>
+</body>
+</html>
